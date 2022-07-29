@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TDA Bot</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>TDA Bot</h1>
+	<form id="form" method="POST" class="form" autocomplete="off">
+		<table>
+			<tr>
+				<th></th>
+				<th>Call</th>
+				<th>Put credit</th>
+				<th>Put</th>
+				<th>Call credit</th>
+			</tr>
+			<tr>
+				<td>Buy Level</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Sell level</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Num. of contracts</td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+			</tr>
+			<tr>
+				<td>Expiry Day</td>
+				<td>
+					<select>
+						<option>Same Day</option>
+						<option>Next Day</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option>Same Day</option>
+						<option>Next Day</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option>Same Day</option>
+						<option>Next Day</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option>Same Day</option>
+						<option>Next Day</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Strike</td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+			</tr>
+			<tr>
+				<td>Stop Loss</td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+				<td><input type="text" name="" placeholder="input"></td>
+			</tr>
+			<tr>
+				<td>Scaling Profit %</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown2" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>				
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Scaling Contracts</td>
+				<!--<td>
+					<div class="data-list-input">
+						<select class="data-list-input">
+							<option value="">Enter Custom Number</option>
+							<option value="Free Run">Free Run</option>
+							<option value="Close All">Close All</option>
+						</select>
+						<input type="text" class="data-list-input" name="">
+					</div>
+				</td>-->
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="data-list-input">
+						<select id="dropDown1" class="newdrp data-list-input">
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="checkbox" name="check1">
+					<label>Check Box</label>
+				</td>
+				<td>
+					<input type="checkbox" name="check1">
+					<label>Check Box</label>
+				</td>
+				<td>
+					<input type="checkbox" name="check1">
+					<label>Check Box</label>
+				</td>
+				<td>
+					<input type="checkbox" name="check1">
+					<label>Check Box</label>
+				</td>
+			</tr>
+		</table>
+		<div class="buttons">
+			<input type="submit" value="Submit" name="Submit">
+			<input type="button" name="Close" value="Close">
+		</div>
+	</form>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
