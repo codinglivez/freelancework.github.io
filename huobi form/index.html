@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Huobi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body onload="fetchAllSPAccounts()">
+	<main>
+		<section class="heading">
+			<h1>Huobi</h1>
+		</section>
+		<section class="body">
+			<div class="body-left">
+				<div class="form-selector">
+					<div>
+						<input type="radio" id="spot" name="form-switch" value="spot" checked="checked">
+		  				<label for="spot"><h3>Spot</h3></label>
+					</div>
+					<div>
+						<input type="radio" id="futures" name="form-switch" value="futures">
+		  				<label for="futures"><h3>Futures</h3></label>
+					</div>
+				</div>
+				<div class="form-container">
+					<form id="form"  method="POST" class="form" autocomplete="off">
+						<select id="dropDown" name="dropDown">
+						</select>
+						<input type="text" class="input-text" id="acc_name" name="account name" placeholder="Account Name">
+						<input type="text" class="input-text" id="api_key" name="API Key" placeholder="API Key">
+						<input type="text" class="input-text" id="api_secret" name="API Secrete" placeholder="API Secrete">
+						<div class="acc-btn">
+							<div id="add_main_acc">Add Main Account</div>
+							<div id="add_sub_acc">Add Sub Account</div>
+						</div>
+						<div class="separator-form"></div>
+						<input type="text" class="input-text" name="coins" id="coin" placeholder="Coin">
+						<input type="text" class="input-text" name="investment" id="investment" placeholder="Investment">
+						<input type="text" class="input-text" name="leverage" id="leverage" placeholder="Leverage">
+						<input type="text" class="input-text" name="lower-limit" id="lower_limit" placeholder="Lower limit">
+						<input type="text" class="input-text" name="upper_limit" id="upper_limit" placeholder="Upper Limit">
+						<input type="text" class="input-text" name="entry_level_interval" id="entry_level_interval" placeholder="Entry Level Interval">
+						<input type="text" class="input-text" name="take_profit_interval" id="take_profit_interval" placeholder="Take Profit Interval">
+						<br>
+						<input type="submit" value="Submit">
+						<div class="last-btn" style="margin-top: 1%;">
+							<div id="login_acc" onclick="log_func()">Login</div>
+							<div id="del_acc" onclick="del_acc()">Delete Account</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="body-right">
+				<ul id="list" class="list-item">
+				</ul>
+			</div>
+		</section>
+	</main>
+<script src="index.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
