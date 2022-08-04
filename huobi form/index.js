@@ -1,3 +1,20 @@
+document.body.style.display = "none";
+
+window.onload = function() { 
+    var username = prompt("Enter username");
+    var password = prompt("Enter password");
+    console.log("Username: "+username, " Password: "+password);
+    if(password === "123")
+    {
+        loadbody();
+    }
+}
+
+function loadbody() {
+    console.log("password correct");
+    document.body.style.display = "block"; 
+}
+
 $("#form").submit(function(event) {
     event.preventDefault();
 
@@ -88,11 +105,12 @@ $("#form").submit(function(event) {
 
 });
 
-function log_func() {
+/*function log_func() {
     var username = prompt("Enter username");
     var password = prompt("Enter password");
     console.log("Username: "+username, " Password: "+password);
-}
+}*/
+
 function del_acc() {
     var users = ['ravi', 'raj', 'abhi'];
     console.log(users);

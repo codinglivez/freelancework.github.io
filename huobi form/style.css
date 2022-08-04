@@ -140,7 +140,7 @@ main {
 }
 
 .last-btn div {
-	flex: 0.5;
+	flex: 1;
 	margin: 0.2rem;
 	padding: 0.5rem;
 	font-family: sans-serif;
